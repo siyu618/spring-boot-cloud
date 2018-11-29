@@ -55,6 +55,7 @@
         <jedis.version>2.9.0</jedis.version>
         <spring-boot-starter-parent.version>2.1.0.RELEASE</spring-boot-starter-parent.version>
         <org.springframework.cloud.spring-cloud-starter-netflix-hystrix.version>2.0.2.RELEASE</org.springframework.cloud.spring-cloud-starter-netflix-hystrix.version>
+        <org.springframework.cloud.spring-cloud-context.version>2.0.2.RELEASE</org.springframework.cloud.spring-cloud-context.version>
         <testng.version>6.9.8</testng.version>
         <junit.version>4.12</junit.version>
         <aspectj.aspectjrt.version>1.9.1</aspectj.aspectjrt.version>
@@ -85,6 +86,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-context -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-context</artifactId>
+                <version>${org.springframework.cloud.spring-cloud-context.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.ctrip.framework.apollo</groupId>
                 <artifactId>apollo-client</artifactId>
